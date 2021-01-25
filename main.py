@@ -16,11 +16,9 @@ paddle_2 = Paddle((-350, 0))
 
 
 screen.onkey(paddle.up, "Up")
-screen.onkey(paddle_2.up, "W")
-
-
 screen.onkey(paddle.down, "Down")
-screen.onkey(paddle_2.down, "S")
+screen.onkey(paddle_2.up, "w")
+screen.onkey(paddle_2.down, "s")
 
 
 
