@@ -1,9 +1,12 @@
-from turtle import Turtle 
+from turtle import Turtle, Screen 
+
+screen = Screen()
+screen.listen()
 
 class Paddle(Turtle):
-    def __init__(self):
+    def __init__(self, position):
         super().__init__()
-        self.goto(350, 0)
+        self.goto(position)
         self.shape("square")
         self.color("white")
         self.penup()
@@ -12,14 +15,15 @@ class Paddle(Turtle):
         
 
 
-    def up(self):
-        self.penup()
-        new_y = self.ycor() + 20
-        self.goto(self.xcor(), new_y) 
+
+def up(self):
+    self.penup()
+    new_y = self.ycor() + 20
+    self.goto(self.xcor(), new_y) 
 
 
 
-    def down(self):
-        self.penup()
-        new_y = self.ycor() - 20
-        self.goto(self.xcor(), new_y)        
+def down(self):
+    self.penup()
+    new_y = self.ycor() - 20
+    self.goto(self.xcor(), new_y)        
