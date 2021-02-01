@@ -1,5 +1,7 @@
 from turtle import Turtle, Screen 
 from paddle import Paddle
+from ball import Ball
+
 
 screen = Screen()
 screen.tracer(0)
@@ -14,6 +16,7 @@ paddle = Paddle((350, 0))
 
 paddle_2 = Paddle((-350, 0))
 
+ball = Ball()
 
 screen.onkey(paddle.up, "Up")
 screen.onkey(paddle.down, "Down")
