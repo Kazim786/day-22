@@ -14,14 +14,14 @@ screen.title("Pong")
 
 paddle = Paddle((350, 0))
 
-paddle_2 = Paddle((-350, 0))
+left_pad = Paddle((-350, 0))
 
 ball = Ball()
 
 screen.onkey(paddle.up, "Up")
 screen.onkey(paddle.down, "Down")
-screen.onkey(paddle_2.up, "w")
-screen.onkey(paddle_2.down, "s")
+screen.onkey(left_pad.up, "w")
+screen.onkey(left_pad.down, "s")
 
 
 
@@ -34,7 +34,7 @@ while game_is_on:
 
     #To bounce the ball
     #this code is working
-    if ball.distance(paddle) <= 10 or ball.distance(paddle_2) <= 10:
+    if ball.distance(paddle) <= 10 or ball.distance(left_pad) <= 10:
         #probably going to have to change the ball's x and y coordinates
         print(ball.distance(paddle))
 
