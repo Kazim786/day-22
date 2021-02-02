@@ -33,6 +33,7 @@ while game_is_on:
     ball.move()
 
     #To bounce the ball
+    #this code is working
     if ball.distance(paddle) <= 10 or ball.distance(paddle_2) <= 10:
         #probably going to have to change the ball's x and y coordinates
         print(ball.distance(paddle))
