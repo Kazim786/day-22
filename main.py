@@ -37,6 +37,9 @@ while game_is_on:
         ball.bounce()
 
     if ball.xcor() > 400 or ball.xcor() < -400:
-        print("Game over")
+        screen.clear()
+
+    if ball.distance(paddle) <= 1 or ball.distance(left_pad) <= -1:
+        ball.padbounce()
 
 screen.exitonclick()
