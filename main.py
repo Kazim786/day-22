@@ -33,4 +33,8 @@ while game_is_on:
         #probably going to have to change the ball's x and y coordinates
         print(ball.distance(paddle))
 
+    if ball.ycor() == 350 or ball.ycor() == -350:
+        print("Game over")
+
+
 screen.exitonclick()
